@@ -414,3 +414,197 @@ describe('Switch', function() {
 		detectNetwork("6759105555555555333").should.equal("Switch")
 	})
 }); //end of Switch
+
+
+var runTests = function() {
+    //DINERS CLUB 2 tests
+detectNetwork("38345678901234") 
+detectNetwork("39345678901234") 
+
+//AMEX - 2 tests
+detectNetwork("343456789012345") 
+detectNetwork("373456789012345")
+
+//VISA - 3 tests
+detectNetwork("4123456789012") 
+detectNetwork("4123456789012345") 
+detectNetwork("4123456789012345678") 
+
+//MASTERCARD - 5 tests
+detectNetwork("5112345678901234") 
+detectNetwork("5212345678901234") 
+detectNetwork("5312345678901234") 
+detectNetwork("5412345678901234") 
+detectNetwork("5512345678901234") 
+
+//DISCOVER - 16 tests
+detectNetwork("6011345678901234") 
+detectNetwork("6441345678901234") 
+detectNetwork("6451345678901234") 
+detectNetwork("6461345678901234") 
+detectNetwork("6471345678901234") 
+detectNetwork("6481345678901234") 
+detectNetwork("6491345678901234") 
+detectNetwork("6591345678901234") 
+detectNetwork("6011345678901234111") 
+detectNetwork("6441345678901234111") 
+detectNetwork("6451345678901234321") 
+detectNetwork("6461345678901234321") 
+detectNetwork("6471345678901234321") 
+detectNetwork("6481345678901234321") 
+detectNetwork("6491345678901234321") 
+detectNetwork("6591345678901234321")
+
+//MAESTRO - 32 tests
+detectNetwork("501813456782") 
+detectNetwork("502013456782") 
+detectNetwork("503813456782") 
+detectNetwork("630413456782") 
+detectNetwork("5018134567821") 
+detectNetwork("5020134567821") 
+detectNetwork("5038134567821") 
+detectNetwork("6304134567821") 
+detectNetwork("50181345678212") 
+detectNetwork("50201345678212") 
+detectNetwork("50381345678212") 
+detectNetwork("63041345678212") 
+detectNetwork("501813456782129") 
+detectNetwork("502013456782129") 
+detectNetwork("503813456782129") 
+detectNetwork("630413456782129") 
+detectNetwork("5018134567821297") 
+detectNetwork("5020134567821297") 
+detectNetwork("5038134567821297") 
+detectNetwork("6304134567821297") 
+detectNetwork("50181345678212978") 
+detectNetwork("50201345678212978") 
+detectNetwork("50381345678212978") 
+detectNetwork("63041345678212978") 
+detectNetwork("501813456782129789") 
+detectNetwork("502013456782129789") 
+detectNetwork("503813456782129789") 
+detectNetwork("630413456782129789") 
+detectNetwork("5018134567821297893") 
+detectNetwork("5020134567821297893") 
+detectNetwork("5038134567821297893") 
+detectNetwork("6304134567821297893") 
+
+
+///CHINA UnionPay 3236 tests
+
+//CHINA UNION 16 length - 62212
+for(var i = 622126;i <= 622925;i++) {
+  var stringo = Number(i + "0000000001").toString()
+  detectNetwork(stringo)
+}
+
+//CHINA UNION 17 length - 622126-622925
+for(var i = 622126;i <= 622925;i++) {
+  var stringo = Number(i + "00000000001").toString()
+  detectNetwork(stringo)
+}
+
+//CHINA UNION 18 length - 622126-622925
+for(var i = 622126;i <= 622925;i++) {
+  var stringo = Number(i + "000000000001").toString()
+  detectNetwork(stringo)
+}
+
+//CHINA UNION 19 length - 622126-622925
+for(var i = 622126;i <= 622925;i++) {
+  var stringo = Number(i + "0000000000001").toString()
+  detectNetwork(stringo)
+}
+
+//624 - CHina UnionPay (1)
+detectNetwork('6246666666666666')
+detectNetwork('62466666666666661')
+detectNetwork('624666666666666612')
+detectNetwork('6246666666666666123')
+//625 - CHina UnionPay (2)
+detectNetwork('6256666666666666')
+detectNetwork('62566666666666661')
+detectNetwork('625666666666666612')
+detectNetwork('6256666666666666123')
+//626 - CHina UnionPay (3)
+detectNetwork('6266666666666666')
+detectNetwork('62666666666666661')
+detectNetwork('626666666666666612')
+detectNetwork('6266666666666666123')
+//6282 - CHina UnionPay (4)
+detectNetwork('6282666666666666')
+detectNetwork('62826666666666661')
+detectNetwork('628266666666666612')
+detectNetwork('628266666666666613')
+//6283 - CHina UnionPay (5)
+detectNetwork('6283666666666666')
+detectNetwork('62836666666666661')
+detectNetwork('628366666666666612')
+detectNetwork('628366666666666613')
+//6284 - CHina UnionPay (6)
+detectNetwork('6284666666666666')
+detectNetwork('62846666666666661')
+detectNetwork('628466666666666612')
+detectNetwork('628466666666666613')
+//6285 - CHina UnionPay (7)
+detectNetwork('6285666666666666')
+detectNetwork('62856666666666661')
+detectNetwork('628566666666666612')
+detectNetwork('628566666666666613')
+//6286 - CHina UnionPay (8)
+detectNetwork('6286666666666666')
+detectNetwork('62866666666666661')
+detectNetwork('628666666666666612')
+detectNetwork('628666666666666613')
+//6287 - CHina UnionPay (9)
+detectNetwork('6287666666666666')
+detectNetwork('62876666666666661')
+detectNetwork('628766666666666612')
+detectNetwork('628766666666666613')
+//6288 - CHina UnionPay (10)
+detectNetwork('6288666666666666')
+detectNetwork('62886666666666661')
+detectNetwork('628866666666666612')
+detectNetwork('628866666666666613')
+
+////SWITCH - 24 tests
+
+//4903 (1)
+detectNetwork("4903555555555555")
+detectNetwork("490355555555555522")
+detectNetwork("4903555555555555333")
+//4905 (2)
+detectNetwork("4905555555555555")
+detectNetwork("490555555555555522")
+detectNetwork("4905555555555555333")
+//4911 (3)
+detectNetwork("4911555555555555")
+detectNetwork("491155555555555522")
+detectNetwork("4911555555555555333")
+//4936 (4)
+detectNetwork("4936555555555555")
+detectNetwork("493655555555555522")
+detectNetwork("4936555555555555333")
+//6333 (5)
+detectNetwork("6333555555555555")
+detectNetwork("633355555555555522")
+detectNetwork("6333555555555555333")
+//6759 (6)
+detectNetwork("6759555555555555")
+detectNetwork("675955555555555522")
+detectNetwork("6759555555555555333")
+//564182 (7)
+detectNetwork("5641825555555555")
+detectNetwork("564182555555555522")
+detectNetwork("5641825555555555333")
+//633110 (8)
+detectNetwork("6331105555555555")
+detectNetwork("633110555555555522")
+detectNetwork("6331105555555555333")
+    
+    nextStep();
+}
+
+
+setTimeout(function(){ runTests(); }, 3000);
+

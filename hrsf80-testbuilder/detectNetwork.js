@@ -52,3 +52,5 @@ var detectNetwork = function(cardNumber) {
 	}
 	return false;
 }; ///that was a piece of work!
+
+
